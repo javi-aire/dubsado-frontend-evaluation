@@ -6,8 +6,8 @@ export function* postGenerator() {
     yield {
       id: id++,
       handle: faker.internet.userName(),
-      avatar: faker.image.imageUrl(75, 75),
-      image: faker.image.imageUrl(),
+      avatar: faker.image.imageUrl(75, 75, "people", true),
+      image: faker.image.imageUrl(640, 640, "cat", true),
       likes: faker.datatype.number(),
       caption: faker.lorem.sentence(),
     };
