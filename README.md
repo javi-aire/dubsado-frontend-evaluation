@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Dubsado Front End Evaluation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1679" alt="Screenshot 2023-07-07 at 8 46 34 AM" src="https://github.com/Dubsado/frontend-evaluation/assets/66326100/36c30765-2fe6-42d5-ab08-f88788719be1">
 
-## Available Scripts
+Let's build a stripped down instagram clone! 
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To start, fork this repo and pull down to your local development environment. Install all dependencies:
+```
+$ yarn
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once everything is installed, make sure everything is working by running: 
+```
+$ yarn start
+```
+This will start the development server. You can view the application in the browser at [http://localhost:3000](http://localhost:3000). You should see a white page that says "Hello Dubsado!" at the top.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Building The App
 
-### `npm test`
+We have provided a starting point that is an empty react typescript app with a mock `posts` api. You can fetch posts using the `fetch` api, making a `GET` request to `/api/posts`. We are using the `msw` library to mock the api and `@faker-js` to provide all the data you'll need for an endless to build out your feed. If you're interested you can poke around the `/src/mocks` folder to see how the api is setup. The data being returned is typed as `IPost[]` and the `IPost` interface can be imported and used from the `src/types.ts` file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This repo provides everything you'll need to accomplish building out your instagram feed. For making requests please use the `fetch` api. We are keeping things simple on the css side. If you'd like you can just add all the css in the `App.css` file. If you want to orginize it differently or use the css modules pattern that's fine too.
 
-### `npm run build`
+## Expectations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This evaluation is to get a general idea of your coding abilities and styles using React. Don't worry about getting everything looking perfect. This should take you about 45 - 60 minutes. Infinite scroll is probably out of scope for the application, but if you find yourself finished way ahead of the suggested time period and want to give it a go I'd love to see where you get!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Don't worry about creating posts, dispalying stories or any other parts of the instagram app. You can use the screenshot above as a reasonable end point.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Submission
 
-### `npm run eject`
+When you've finished, send a link to your forked repo back to your contact at dubsado. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Code Of Conduct
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is an open book evaluation. We don't expect you to have everything memorized, use the internet! Please, be honest with your submissions. If you feel like your're doing someting questionable you probably are, so don't :)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
